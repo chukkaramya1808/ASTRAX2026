@@ -1,0 +1,6 @@
+{
+  "name": "ASTRA X'26 - Aditya Degree College",
+  "description": "Official registration portal and admin dashboard for ASTRA X'26 AI & Robotics college event at Aditya Degree College.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

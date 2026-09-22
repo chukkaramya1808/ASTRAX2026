@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-outfit: 'Outfit', sans-serif;
+    --font-tech: 'Space Grotesk', monospace;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #4a0013;
+}
+::-webkit-scrollbar-thumb {
+  background: #800020;
+  border-radius: 4px;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9c0027;
+  border-color: rgba(212, 175, 55, 0.7);
+}
+
+/* Base Body Background in Burgundy #800020 */
+body {
+  background-color: #800020;
+  color: #FAF5EE;
+}
+
+/* Continuous Natural Scrolling Background in Burgundy #800020 */
+.site-bg {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #800020;
+  background-image: 
+    radial-gradient(ellipse 90% 70% at 50% -10%, rgba(175, 15, 55, 0.45), transparent 70%),
+    radial-gradient(ellipse 80% 60% at 50% 110%, rgba(105, 0, 26, 0.55), transparent 70%),
+    radial-gradient(circle at 10% 25%, rgba(212, 175, 55, 0.09), transparent 30%),
+    radial-gradient(circle at 90% 65%, rgba(212, 175, 55, 0.09), transparent 30%),
+    linear-gradient(180deg, #800020 0%, #70001c 30%, #630018 70%, #540015 100%);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+/* Circuit pattern overlay in normal flow */
+.circuit-overlay {
+  background-image: radial-gradient(rgba(212, 175, 55, 0.12) 1px, transparent 1px),
+    linear-gradient(to right, rgba(212, 175, 55, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(212, 175, 55, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Gold Metallic Text Gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF1BD 0%, #E5C05B 30%, #C99726 60%, #FFEBA3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-subtle {
+  color: #E2BC56;
+}
+
+/* Gold Glow Effects */
+.gold-glow {
+  text-shadow: 0 0 20px rgba(229, 192, 91, 0.45), 0 0 40px rgba(229, 192, 91, 0.25);
+}
+
+.box-gold-glow {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.18), inset 0 0 15px rgba(212, 175, 55, 0.05);
+}
+
+.box-gold-glow-hover:hover {
+  box-shadow: 0 0 35px rgba(212, 175, 55, 0.32), inset 0 0 20px rgba(212, 175, 55, 0.1);
+}
+
+/* Elegant Art-Deco & Circuit Borders */
+.border-gold-subtle {
+  border-color: rgba(212, 175, 55, 0.28);
+}
+
+.border-gold-bright {
+  border-color: rgba(212, 175, 55, 0.65);
+}
+
+/* Glass Card with Burgundy & Gold Tones */
+.glass-wine-card {
+  background: rgba(90, 0, 22, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.28);
+}
+
+.glass-wine-card:hover {
+  border-color: rgba(212, 175, 55, 0.6);
+  background: rgba(115, 0, 28, 0.85);
+}
+
+/* Light/Cream Input Boxes */
+.cream-input {
+  background-color: #FAF5EE;
+  color: #260811;
+  border: 1.5px solid #DFC99E;
+  transition: all 0.2s ease-in-out;
+}
+
+.cream-input:focus {
+  background-color: #FFFFFF;
+  border-color: #B5882D;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.25);
+  outline: none;
+}
+
+.cream-input::placeholder {
+  color: #7A6054;
+  opacity: 0.85;
+}
+
+/* Gold Button */
+.gold-btn {
+  background: linear-gradient(135deg, #F5D77F 0%, #D4AF37 50%, #B8860B 100%);
+  color: #190309;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.35);
+}
+
+.gold-btn:hover {
+  background: linear-gradient(135deg, #FFDF87 0%, #DFC04F 50%, #C99726 100%);
+  box-shadow: 0 6px 25px rgba(212, 175, 55, 0.5);
+  transform: translateY(-1px);
+}
+
+.gold-btn:active {
+  transform: translateY(0);
+}
+
+.gold-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
